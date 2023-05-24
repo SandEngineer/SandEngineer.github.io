@@ -208,31 +208,6 @@
         }
       },
 
-      chart: {
-        events: {
-          load: function() {
-            var chart = this;
-
-            annotationData.forEach(function(annotation) {
-              chart.addAnnotation({
-                labels: [{
-                  type: 'label',
-                  point: {
-                    x: annotation.x,
-                    y: annotation.y,
-                    xAxis: 0,
-                    yAxis: 0
-                  },
-                  x: annotation.xOffset,
-                  y: annotation.yOffset,
-                  text: annotation.text
-                }]
-              });
-            });
-          },
-        }
-      },
-
       title: {
         text: '',
       },
@@ -353,6 +328,31 @@
                   return csv.replace(/\n\n/g, '\n');
               }
           },
+          
+          chart: {
+            events: {
+              load: function() {
+                var chart = this;
+
+                annotationData.forEach(function(annotation) {
+                  chart.addAnnotation({
+                    labels: [{
+                      type: 'label',
+                      point: {
+                        x: annotation.x,
+                        y: annotation.y,
+                        xAxis: 0,
+                        yAxis: 0
+                      },
+                      x: annotation.xOffset,
+                      y: annotation.yOffset,
+                      text: annotation.text
+                    }]
+                  });
+                });
+              },
+            }
+          },
 
           title: {
             text: '',
@@ -466,6 +466,31 @@
               beforeParse: function (csv) {
                   return csv.replace(/\n\n/g, '\n');
               }
+          },
+
+          chart: {
+            events: {
+              load: function() {
+                var chart = this;
+
+                annotationData.forEach(function(annotation) {
+                  chart.addAnnotation({
+                    labels: [{
+                      type: 'label',
+                      point: {
+                        x: annotation.x,
+                        y: annotation.y,
+                        xAxis: 0,
+                        yAxis: 0
+                      },
+                      x: annotation.xOffset,
+                      y: annotation.yOffset,
+                      text: annotation.text
+                    }]
+                  });
+                });
+              },
+            }
           },
 
           title: {
