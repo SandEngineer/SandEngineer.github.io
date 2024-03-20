@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About us</title>
+    <link rel="icon" href="img/sb_ikon_sv.svg" />
+
+    <link
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <link href="/css/styles.css" rel="stylesheet" />
+
+    <script
+      src="https://kit.fontawesome.com/f6e30abb82.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Header med bild -->
+      <div class="mb-5 header__cont">
+        <!-- Card container -->
+        <div class="row g-5 me-0">
+          <!-- Stort card -->
+          <div class="card bg-transparent">
+            <div class="row me-0 d-flex flex-column-reverse flex-md-row">
+              <!-- Body med text -->
+              <div class="row g-0 offset-1 col-8 col-md-4 align-content-center pt-md-5 pt-lg-0">
+                <div class="card-body">
+                  <h2 class="card-title rubrik mt-3 mt-md-0">
+                    we are skogsbrand
+                  </h2>
+                  <p class="card-text brodtext">
+                    Vi är Skogsbrand – en passionerad oas för dem som söker det
+                    oväntade och det oförglömliga. Genom att kombinera spänning,
+                    gemenskap och en touch av mystik strävar vi efter att vara
+                    mer än bara en nöjespark. Vi är en plats där du kan släppa
+                    taget om vardagen och låta dig svepas iväg av adrenalinet
+                    och rytmen från natten.
+                  </p>
+                  <p class="card-text brodtext">
+                    Vår vision är enkel: att vara den destination där varje gäst
+                    kan glömma omvärlden och låta sig förföras av upplevelser
+                    utöver det vanliga. Med våra kärnvärden som ledstjärna –
+                    spänning, kvalitet och gemenskap – strävar vi efter att
+                    skapa minnen som varar livet ut.
+                  </p>
+                </div>
+              </div>
+              <!-- Bild -->
+              <div class="col-12 col-md-7 pe-0">
+                <div class="card__imghead">
+                  <img
+                    src="/img/pexels-cottonbro-studio-7130218.jpg"
+                    class="header__img"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- hela nav-taggen behövs på alla sidor -->
+      <nav>
+        <!-- Nav för lg-skärm -->
+        <div class="navbar-right d-none d-lg-block">
+          <div class="menu-toggle mx-lg-auto pb-lg-4" onclick="openNav()">
+            <img src="img/hamburger_nav.svg" alt="" />
+          </div>
+          <div class="rightside-border"></div>
+        </div>
+
+        <!-- nav för små skärmar -->
+        <div id="navbar-sm" class="navbar-top d-lg-none">
+          <div class="rightside-border rightside-border-sm"></div>
+          <div class="menu-toggle" onclick="openNav()">
+            <img src="img/hamburger_nav.svg" class="mx-1" alt="" />
+          </div>
+        </div>
+
+        <!-- Navbar -->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="overlay-content rubrik">
+            <div
+              class="row row-cols-1 row-cols-lg-6 justify-content-center gap-1 gap-lg-0"
+            >
+              <a class="col-md-auto" href="home.html">home</a>
+              <a class="col-md-auto" href="activities.html">activities</a>
+              <a class="col-md-auto" href="booking.html">tickets</a>
+              <a class="col-md-auto" href="map.html">map</a>
+              <a class="col-md-auto" href="area.html">area</a>
+              <a class="col-md-auto" href="about.html">about us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Promovideo -->
+      <div class="container mb-5 pb-5">
+        <div class="row justify-content-center">
+          <video class="col-8" width="80%" height="auto" controls>
+            <source src="/vid/skogsbrand02.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <!-- Kontaktinfo -->
+      <div class="container brodtext my-5 py-5">
+        <div class="row offset-md-2 offset-lg-3 mb-4 text-center text-md-start">
+          <div class="col-12 col-md-5">
+            <h6 class="rubrik fs-5">opening hours</h6>
+            <p>
+              mån–tors 17–00 <br />
+              fre–sön 17–03
+            </p>
+          </div>
+          <div class="col-12 col-md-5">
+            <h6 class="rubrik fs-5">contact us</h6>
+            <div
+              class="d-flex align-content-center justify-content-center justify-content-md-start"
+            >
+              <i class="fa-regular fa-envelope fs-4 footer__icon me-2"></i>
+              <p>hello@skogsbrand.com</p>
+            </div>
+            <div
+              class="d-flex align-content-center justify-content-center justify-content-md-start"
+            >
+              <i
+                class="fa-solid fa-mobile-screen-button fs-4 footer__icon me-2"
+              ></i>
+              <p>0123-420 69 1337</p>
+            </div>
+          </div>
+        </div>
+        <div class="row offset-md-2 offset-lg-3 mb-5 text-center text-md-start">
+          <div class="col">
+            <h6 class="rubrik fs-5">find us</h6>
+            <p>Gyllbergens naturreservat<br />781 93 Borlänge</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Embed av google-karta -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7883.951184702238!2d15.1348686!3d60.3958794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465d7edfd65e30e1%3A0x717a73db1a3c6667!2sGyllbergen!5e0!3m2!1ssv!2sse!4v1710850147184!5m2!1ssv!2sse"
+            width="800"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="col-8"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <div class="divider-lg"></div>
+
+    <!-- footer -->
+    <footer class="text-center text-lg-start brodtext mt-5">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row g-0 mt-3">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="rubrik fs-5">navigation</h6>
+            <p>
+              <a href="home.html">home</a>
+            </p>
+            <p>
+              <a href="activities.html">activities</a>
+            </p>
+            <p>
+              <a href="booking.html">tickets</a>
+            </p>
+            <p>
+              <a href="area.html">the area</a>
+            </p>
+            <p>
+              <a href="map.html">map</a>
+            </p>
+            <p>
+              <a href="about.html">about us</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="rubrik fs-5">opening hours</h6>
+
+            <p>mån–tors 17–00 <br /></p>
+            <p>fre–sön 17–03</p>
+
+            <h6 class="rubrik fs-5 mt-5">find us</h6>
+            <p>Gyllbergens naturreservat<br />781 93 Borlänge</p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="rubrik fs-5">contact us</h6>
+            <div
+              class="d-flex align-content-center justify-content-center justify-content-md-start"
+            >
+              <i class="fa-regular fa-envelope fs-4 footer__icon me-2"></i>
+              <p>hello@skogsbrand.com</p>
+            </div>
+            <div
+              class="d-flex align-content-center justify-content-center justify-content-md-start"
+            >
+              <i
+                class="fa-solid fa-mobile-screen-button fs-4 footer__icon me-2"
+              ></i>
+              <p>0123-420 69 1337</p>
+            </div>
+
+            <h6 class="rubrik fs-5 mt-5 mb-3">follow us</h6>
+            <p>
+              <a
+                href="https://www.instagram.com/skogsbrand"
+                class="footer__link"
+              >
+                <i class="fa-brands fa-instagram fs-2 footer__icon"></i>
+              </a>
+              <a href="https://www.tiktok.com/skogsbrand" class="footer__link">
+                <i
+                  class="fa-brands fa-tiktok fs-2 px-5 px-md-2 px-lg-4 footer__icon"
+                ></i>
+              </a>
+              <a
+                href="https://open.spotify.com/episode/5U2XUJHEDBGnWJchL4ok2h?si=602b023f37c74289"
+                class="footer__link"
+              >
+                <i class="fa-brands fa-spotify fs-2 footer__icon"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3">© 2024 Copyright: grupp2byrå</div>
+      <!-- Copyright -->
+    </footer>
+    <!-- footer -->
+
+    <script src="/js/nav.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>

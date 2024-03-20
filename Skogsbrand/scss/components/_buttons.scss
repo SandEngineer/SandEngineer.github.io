@@ -1,0 +1,109 @@
+// Fetches variables from the entire folder to use
+@use "../abstracts" as *;
+
+//Använd klasserna: btn button och button--färgen när du skapar en knapp
+//Exempel: <button class="btn button button--orange" type="submit">betala</button>
+
+.button {
+  //funkar till synes likadant även om man döper den tillbaka till btn
+  &,
+  &:link,
+  &:visited {
+    text-transform: lowercase;
+    font-family: $prompt;
+    color: $aska;
+    font-weight: 800;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    padding: 0.7rem 3rem;
+    display: inline-block;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    border-width: 3px;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &--back {
+    border-color: $aska;
+    &:hover {
+      background-color: $aska;
+    }
+    &:active {
+      // vill inte av någon anledning, även i vanliga active, kräver mer efterforskning
+      border-color: $aska;
+      background-color: $aska;
+    }
+  }
+
+  &--orange {
+    background-color: $aperol;
+    border-color: $aperol;
+    &:hover {
+      color: $aska;
+      box-shadow: (0 0 1rem $aperol);
+      background-color: $aperol;
+    }
+  }
+
+  &--pink {
+    background-color: $rosa-pantern;
+
+    &:hover {
+      color: $aska;
+      box-shadow: (0 0 1rem $rosa-pantern);
+      background-color: $rosa-pantern;
+    }
+  }
+
+  &--green {
+    background-color: $mojito;
+
+    &:hover {
+      color: $aska;
+      box-shadow: (0 0 1rem $mojito);
+      background-color: $mojito;
+    }
+  }
+
+  &--blue {
+    background-color: $isbjorn;
+
+    &:hover {
+      color: $aska;
+      box-shadow: (0 0 1rem $isbjorn);
+      background-color: $isbjorn;
+    }
+  }
+
+  &--white {
+    background-color: $aska;
+    color: $kol;
+
+    &:hover {
+      box-shadow: (0 0 1rem $aska);
+      background-color: $aska;
+    }
+  }
+
+  &--landing {
+    color: $rosa-pantern;
+    background: transparent;
+    border: 3px solid $rosa-pantern;
+    width: 17rem;
+
+    &:hover {
+      color: $rosa-pantern;
+      background: transparent;
+      box-shadow: (0 0 1rem $rosa-pantern);
+      border: 3px solid $rosa-pantern;
+      background: transparent;
+    }
+  }
+}

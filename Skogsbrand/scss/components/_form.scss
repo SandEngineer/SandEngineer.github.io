@@ -1,0 +1,36 @@
+// Fetches variables from the entire folder to use
+@use "../abstracts" as *;
+
+// Include parts of Bootstrap
+@import "../../node_modules/bootstrap/scss/functions"; // Krävs för att variables ska funka
+@import "../../node_modules/bootstrap/scss/variables"; // Innehåller $success och $danger
+
+.form__input {
+  border-color: $isbjorn;
+
+  &:focus {
+    border-color: $lemon-margarita;
+    filter: drop-shadow(0 0 0.5rem $isbjorn);
+  }
+}
+
+.form__feedback {
+  font-size: 0.8rem;
+
+  &.valid-feedback {
+    color: $success;
+  }
+
+  &.invalid-feedback {
+    color: $danger;
+  }
+}
+
+.form-bg {
+  border-radius: 10px;
+
+  &--black {
+    background-color: $kol;
+  }
+
+}

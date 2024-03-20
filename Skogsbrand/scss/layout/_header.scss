@@ -1,0 +1,23 @@
+// Fetches variables from the entire folder to use
+@use "../abstracts" as *;
+
+.card__imghead {
+    height: 70vh;
+}
+
+.header__img {
+    width: 100%;
+    height: 100%;
+}
+
+.header__cont {
+    @include respond(lg) {
+        margin-top: 0;
+    }
+    @include respond(md) {
+        margin-top: 5vh;
+    }
+    @include respond(sm) {
+        margin-top: 0;
+    }
+}

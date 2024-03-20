@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Area</title>
+    <link rel="icon" href="img/sb_ikon_sv.svg" />
+    '
+
+    <link
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <link href="/css/styles.css" rel="stylesheet" />
+
+    <script
+      src="https://kit.fontawesome.com/f6e30abb82.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Header med bild -->
+      <div class="mb-5 header_cont">
+        <!-- Card container -->
+        <div class="row g-5 me-0">
+          <!-- Stort card -->
+          <div class="card bg-transparent mt-0">
+            <div class="row me-0 d-flex flex-column-reverse flex-md-row">
+              <!-- Body med text -->
+              <div
+                class="row g-0 offset-1 col-10 col-md-4 align-content-center pt-md-5 pt-lg-0"
+              >
+                <div class="card-body">
+                  <h2 class="card-title rubrik mt-3 mt-md-5">
+                    this is skogsbrand
+                  </h2>
+                  <p class="card-text brodtext">
+                    Välkommen till Skogsbrand, en oförglömlig upplevelse där
+                    äventyr och nattliv möts. Skogsbrand är det ultimata stället
+                    för en AW med kompisgänget eller en första dejt. Skogsbrand
+                    brinner för att vara stället där du kan glömma omvärlden och
+                    släppa taget. En spännande och fartfylld miljö med
+                    kvalitetsunderhållning, kulinariska upplevelser och bra
+                    musik.
+                  </p>
+                  <p class="card-text brodtext">
+                    Skogsbrand är mer än bara en plats i skogen; det är en
+                    inbjudan till en värld av nattligt äventyr och fest, för dig
+                    som söker det extraordinära. Är du redo att get lost in the
+                    woods?
+                  </p>
+                </div>
+              </div>
+              <!-- Bild -->
+              <div class="col-12 col-md-7 pe-0">
+                <div class="card__imghead">
+                  <img
+                    src="/img/daniel-kainz-FdkF3FKWeK0-unsplash.jpg"
+                    class="header__img"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- hela nav-taggen behövs på alla sidor -->
+      <nav>
+        <!-- Nav för lg-skärm -->
+        <div class="navbar-right d-none d-lg-block">
+          <div class="menu-toggle mx-lg-auto pb-lg-4" onclick="openNav()">
+            <img src="img/hamburger_nav.svg" alt="" />
+          </div>
+          <div class="rightside-border"></div>
+        </div>
+
+        <!-- nav för små skärmar -->
+        <div id="navbar-sm" class="navbar-top d-lg-none">
+          <div class="rightside-border rightside-border-sm"></div>
+          <div class="menu-toggle" onclick="openNav()">
+            <img src="img/hamburger_nav.svg" class="mx-1" alt="" />
+          </div>
+        </div>
+
+        <!-- Navbar -->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="overlay-content rubrik">
+            <div
+              class="row row-cols-1 row-cols-lg-6 justify-content-center gap-1 gap-lg-0"
+            >
+              <a class="col-md-auto" href="home.html">home</a>
+              <a class="col-md-auto" href="activities.html">activities</a>
+              <a class="col-md-auto" href="booking.html">tickets</a>
+              <a class="col-md-auto" href="map.html">map</a>
+              <a class="col-md-auto" href="area.html">area</a>
+              <a class="col-md-auto" href="about.html">about us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Sektion av stora cards -->
+      <section class="my-5 py-5">
+        <!-- HÖGERCARD Yttercontainer för att justera cardet -->
+        <div class="my-5 py-5">
+          <!-- Card container -->
+          <div class="row g-5 bigcard__cont justify-content-end me-0">
+            <!-- Outlinen -->
+            <div
+              class="bigcard__outline bigcard__outline--right-top bigcard__outline--pink"
+            ></div>
+            <!-- Stort card -->
+            <div class="card bg-transparent">
+              <div class="row g-0 justify-content-center me-0">
+                <!-- Bild -->
+                <div
+                  class="offset-1 offset-sm-0 col-10 col-sm-7 col-md-5 col-lg-4 d-md-flex align-items-md-center"
+                >
+                  <img
+                    src="/img/pexels-mark-angelo-sampan-1587927.jpg"
+                    class="card-img img-fluid rounded-3"
+                    alt="..."
+                  />
+                </div>
+                <!-- Body med text -->
+                <div
+                  class="offset-1 offset-sm-0 col-10 col-sm-7 col-md-5 col-lg-4 ps-md-5 d-md-flex align-items-md-center"
+                >
+                  <div class="card-body card__bg--black">
+                    <h2 class="card-title rubrik mt-3 mt-md-0">the stage</h2>
+                    <p class="card-text brodtext">
+                      I skogens hjärta pulserar en neonbelyst scen, en
+                      futuristisk glänta där elektroniska beats och neonljus
+                      smälter samman med nattens natur. Artister lyser upp
+                      mörkret med framträdanden som förenar framtiden med
+                      skogens uråldriga skönhet. Välkommen till en plats där
+                      musik och magi skapar en portal till en annan värld, djupt
+                      inne i drömmarnas skog.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sektion av cards -->
+      <section class="container my-5 py-5">
+        <div class="row offset-lg-1">
+          <h2 class="col-12">the attractions</h2>
+          <p class="col-12 col-md-8 col-lg-6 brodtext">
+            Upptäck fartfylld spänning på Skogsbrand med toppattraktioner för
+            alla! Våra åkattraktioner bjuder på panoramavyer, fartfyllda
+            ögonblick och rusande puls. Varje attraktion lovar ett unikt äventyr
+            och minnesvärda ögonblick. Adrenalinkickar utlovas!
+          </p>
+        </div>
+        <!-- Container för raden om tre cards -->
+        <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+          <!-- Korthållare för att transform ska funka -->
+          <div class="col cardholder mt-3 m-lg-3">
+            <!-- Cardet -->
+            <div class="card card__bg--black card__border-orange">
+              <!-- Bild -->
+              <div class="card__image">
+                <img
+                  src="/img/rollercoaster.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <!-- Body med text -->
+              <div class="card-body small-card__text-box m-1 mt-4 mt-md-1 mt-lg-4 p-md-4">
+                <h5 class="card-title rubrik">bonfire</h5>
+                <p class="card-text brodtext">
+                  Skogsbrands vildaste berg- och dalbana som tar dig på en
+                  adrenalinfylld resa genom skogen.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Korthållare för att transform ska funka -->
+          <div class="col cardholder mt-3 m-lg-3">
+            <!-- Cardet -->
+            <div class="card card__bg--black card__border-pink">
+              <!-- Bild -->
+              <div class="card__image">
+                <img
+                  src="/img/pexels-guilherme-rossi-1821349.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <!-- Body med text -->
+              <div class="card-body small-card__text-box m-1 mt-4 mt-md-1 mt-lg-4 p-md-4">
+                <h5 class="card-title rubrik">pariserhjulet</h5>
+                <p class="card-text brodtext">
+                  En tur högt uppe bland trädtopparna som skapar livslånga
+                  minnen under en stjärnklar himmel.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Korthållare för att transform ska funka -->
+          <div class="col cardholder mt-3 m-lg-3">
+            <!-- Cardet -->
+            <div class="card card__bg--black card__border-blue">
+              <!-- Bild -->
+              <div class="card__image">
+                <img
+                  src="/img/pexels-moath-photos-19769176.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <!-- Body med text -->
+              <div class="card-body small-card__text-box m-1 mt-4 mt-md-1 mt-lg-4 p-md-4">
+                <h5 class="card-title rubrik">slänggungan</h5>
+                <p class="card-text brodtext">
+                  En fartfylld tur bland gran och tall som garanterat får dig
+                  att tappa andan och längta efter mer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-5 py-5">
+        <!-- VÄNSTERCARD Yttercontainer för att justera cardet -->
+        <div class="my-5 py-5">
+          <!-- Card container -->
+          <div class="row g-5 bigcard__cont justify-content-start me-0">
+            <!-- Outlinen -->
+            <div
+              class="bigcard__outline bigcard__outline--left-bottom bigcard__outline--white"
+            ></div>
+            <!-- Stort card -->
+            <div class="card bg-transparent">
+              <div class="row justify-content-center me-0">
+                <!-- Body med text -->
+                <div
+                  class="offset-1 offset-sm-0 col-10 col-sm-7 col-md-5 col-lg-4 ps-md-5 d-md-flex align-items-md-center"
+                >
+                  <div class="card-body card__bg--black">
+                    <h2 class="card-title rubrik mt-3 mt-md-0">
+                      eat, drink & hang out
+                    </h2>
+                    <p class="card-text brodtext">
+                      Skogsbrand erbjuder matupplevelser i en spännande
+                      atmosfär. Vår restaurang serverar äkta smaker från skogen
+                      med allt från grillade grönsaksspett till
+                      blåbärspannkakor, och i tältet väntar kall öl, goda
+                      drinkar och snacks som räcker hela natten lång. Vill du ha
+                      lite mer puls finns gågatan med fantastisk streetfood från
+                      hela världen.
+                    </p>
+                  </div>
+                </div>
+                <!-- Bild -->
+                <div
+                  class="offset-1 offset-sm-0 col-10 col-sm-7 col-md-5 col-lg-4 d-md-flex align-items-md-center"
+                >
+                  <img
+                    src="/img/pexels-photo-1025804.jpeg"
+                    class="card-img img-fluid rounded-3"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider-lg"></div>
+
+        <!-- HÖGERCARD Yttercontainer för att justera cardet -->
+        <div class="my-5 py-5">
+          <!-- Card container -->
+          <div class="row g-5 bigcard__cont justify-content-end me-0">
+            <!-- Outlinen -->
+            <div
+              class="bigcard__outline bigcard__outline--right-top bigcard__outline--blue"
+            ></div>
+            <!-- Stort card -->
+            <div class="card bg-transparent">
+              <div class="row g-0 justify-content-center me-0">
+                <!-- Bild -->
+                <div
+                  class="offset-1 offset-sm-0 col-10 col-sm-7 col-md-5 col-lg-4 d-md-flex align-items-md-center"
+                >
+                  <img
+                    src="/img/pexels-jacob-morch-426976.jpg"
+                    class="card-img img-fluid rounded-3"
+                    alt="..."
+                  />
+                </div>
+                <!-- Body med text -->
+                <div
+                  class="offset-1 offset-sm-0 col-10 col-sm-7 col-md-5 col-lg-4 ps-md-5 d-md-flex align-items-md-center"
+                >
+                  <div class="card-body card__bg--black">
+                    <h2 class="card-title rubrik mt-3 mt-md-0">
+                      dance, dance, dance
+                    </h2>
+                    <p class="card-text brodtext">
+                      Vill du ha en fartfylld kväll och dansa natten lång? Känna
+                      pulsen av livlig musik som ekar genom skogen. Upptäck vårt
+                      utbud av scenframträdanden och nattklubb där varje beat
+                      bjuder in till oändlig dans och glädje. Här, bland ljusets
+                      spel i neon och nattens magi, kan du ge dig hän till
+                      musikens kraft och skapa oförglömliga minnen tillsammans
+                      med vänner.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="divider-lg"></div>
+
+    <!-- footer -->
+    <footer class="text-center text-lg-start brodtext mt-5">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row g-0 mt-3">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="rubrik fs-5">navigation</h6>
+            <p>
+              <a href="home.html">home</a>
+            </p>
+            <p>
+              <a href="activities.html">activities</a>
+            </p>
+            <p>
+              <a href="booking.html">tickets</a>
+            </p>
+            <p>
+              <a href="area.html">the area</a>
+            </p>
+            <p>
+              <a href="map.html">map</a>
+            </p>
+            <p>
+              <a href="about.html">about us</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="rubrik fs-5">opening hours</h6>
+
+            <p>mån–tors 17–00 <br /></p>
+            <p>fre–sön 17–03</p>
+
+            <h6 class="rubrik fs-5 mt-5">find us</h6>
+            <p>Gyllbergens naturreservat<br />781 93 Borlänge</p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="rubrik fs-5">contact us</h6>
+            <div
+              class="d-flex align-content-center justify-content-center justify-content-md-start"
+            >
+              <i class="fa-regular fa-envelope fs-4 footer__icon me-2"></i>
+              <p>hello@skogsbrand.com</p>
+            </div>
+            <div
+              class="d-flex align-content-center justify-content-center justify-content-md-start"
+            >
+              <i
+                class="fa-solid fa-mobile-screen-button fs-4 footer__icon me-2"
+              ></i>
+              <p>0123-420 69 1337</p>
+            </div>
+
+            <h6 class="rubrik fs-5 mt-5 mb-3">follow us</h6>
+            <p>
+              <a
+                href="https://www.instagram.com/skogsbrand"
+                class="footer__link"
+              >
+                <i class="fa-brands fa-instagram fs-2 footer__icon"></i>
+              </a>
+              <a href="https://www.tiktok.com/skogsbrand" class="footer__link">
+                <i
+                  class="fa-brands fa-tiktok fs-2 px-5 px-md-2 px-lg-4 footer__icon"
+                ></i>
+              </a>
+              <a
+                href="https://open.spotify.com/episode/5U2XUJHEDBGnWJchL4ok2h?si=602b023f37c74289"
+                class="footer__link"
+              >
+                <i class="fa-brands fa-spotify fs-2 footer__icon"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3">© 2024 Copyright: grupp2byrå</div>
+      <!-- Copyright -->
+    </footer>
+    <!-- footer -->
+
+    <script src="/js/nav.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>

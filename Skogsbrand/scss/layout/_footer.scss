@@ -1,0 +1,32 @@
+// Fetches variables from the entire folder to use
+@use "../abstracts" as *;
+
+footer {
+  background-image: 
+  url(/img/sb_wave_darkgreen.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+a {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $aska;
+  }
+
+  &:hover,
+  &:active {
+    text-shadow: 0 0 1rem $aska;
+  }
+}
+
+.footer__icon {
+    background-color: transparent;
+    
+          &:hover,
+      &:active {
+        text-shadow: 0 0 1rem $aska;
+      }
+  }

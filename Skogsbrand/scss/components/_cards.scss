@@ -1,0 +1,110 @@
+// Fetches variables from the entire folder to use
+@use "../abstracts" as *;
+
+.card,
+.card-body {
+  border: none;
+
+  &:hover,
+  &:active {
+    text-shadow: none;
+  }
+}
+
+.card {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.small-card__text-box {
+  height: 13rem;
+}
+
+.card__bg {
+  &--black {
+    background-color: $kol;
+  }
+}
+
+// Extra container för att transform ska funka på hela innehållet, inte varje del för sig
+.cardholder {
+  transition: all 0.1s;
+  min-width: 10rem;
+  max-width: 18rem;
+  &:hover {
+    transform: translate(0, -3px);
+  }
+}
+
+// Stora cardets container
+.bigcard__cont {
+  position: relative; // För att borderns absolute ska funka
+}
+
+// Backbordern för stora card
+.bigcard__outline {
+  position: absolute;
+  top: -5rem;
+  z-index: -1;
+  height: 130%;
+  width: 70%;
+  background-clip: padding-box;
+  border-width: 0.5rem;
+  border-style: solid; 
+  // Högerjusterad rundad topp
+  &--right-top {
+    border-right: none;
+    border-radius: 15rem 0 0 0;
+  }
+  // Högerjusterad rundad botten
+  &--right-bottom {
+    border-right: none;
+    border-radius: 0 0 0 15rem;
+  }
+  // Vänsterjusterad rundad topp
+  &--left-top {
+    border-left: none;
+    border-radius: 0 15rem 0 0;
+  }
+  // Vänsterjusterad rundad botten
+  &--left-bottom {
+    border-left: none;
+    border-radius: 0 0 15rem 0;
+  }
+  // Profilfärger
+  &--orange {
+    border-color: $aperol;
+  }
+  &--pink {
+    border-color: $rosa-pantern;
+  }
+  &--blue {
+    border-color: $isbjorn;
+  }
+  &--green {
+    border-color: $mojito;
+  }
+  &--white {
+    border-color: $aska;
+  }
+  // Custom scaling för att den ska hålla sig relativt relativ mot cardets storlek
+  // Använder Bootstrap-brytpunkter
+  @include respond(xl) {
+    height: 132%;
+    width: 70%;
+  }
+  @include respond(lg) {
+    height: 130%;
+  }
+  @include respond(md) {
+    height: 130%;
+    width: 75%;
+  }
+  @include respond(sm) {
+    height: 115%;
+    width: 60%;
+  }
+  @include respond(xs) {
+    width: 70%;
+  }
+}

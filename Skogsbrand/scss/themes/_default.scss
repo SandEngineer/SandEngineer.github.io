@@ -1,0 +1,16 @@
+/*
+This file is used for our default theme across the entire site.
+*/
+
+// Fetches variables from the entire folder to use
+@use "../abstracts" as *;
+
+body {
+  background-color: $kol;
+}
+
+/* ändra färg när man markerar text */
+::selection {
+  color: $kol;
+  background: $aska;
+}
