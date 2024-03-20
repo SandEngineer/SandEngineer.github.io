@@ -425,6 +425,11 @@ This file is used to contain all scss imports.
 .booking-margin {
   margin-top: -18rem;
 }
+@media (max-width: 992px) {
+  .booking-margin {
+    margin-top: -16rem;
+  }
+}
 
 /*
 This file is used to contain all scss imports.
@@ -789,6 +794,10 @@ object#map {
   height: 100%;
   position: relative;
   z-index: 1;
+}
+
+.map__title-margin {
+  margin-top: 5vh;
 }
 
 div#toolTip {
